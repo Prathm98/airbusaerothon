@@ -6,6 +6,7 @@ import data from '../assets/appsData.json'
 const AppSection = () => {
   return (
     <div className='p-grid'>
+      {/* App section text content */}
       <div className='p-col-12 p-md-6 p-lg-7 app-body'>
         <div className='app-section-title'>Team BitByBit</div>
         <div
@@ -33,11 +34,15 @@ const AppSection = () => {
           <i className='pi pi-android' style={{ color: '#4caf50' }}></i>
         </h4>
       </div>
+      {/* App section text content end */}
+
+      {/* App section boilerplate content */}
       <div className='p-col-12 p-md-12 p-lg-12 app-body'>
         <AppDetails heading={'WEB FRONT END STACK'} data={data.front} />
         <AppDetails heading={'BACK END STACK'} data={data.back} />
         <AppDetails heading={'OTHER STACK'} data={data.other} />
       </div>
+      {/* App section boilerplate content end */}
     </div>
   )
 }

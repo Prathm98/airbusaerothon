@@ -1,6 +1,11 @@
 {
-    "front": [
-        {"id": "1000","name": "Bamboo Watch","image": "bamboo-watch.jpg","zip":"", "github":"", "details":""},
+    "front": [{
+        "name": "ReactJS",
+        "image": "react.jpg",
+        "zip":"https://github.com/Prathm98/react-boilerplate/archive/refs/heads/main.zip", 
+        "github":"https://github.com/Prathm98/react-boilerplate", 
+        "docs":"https://reactjs.org/docs/getting-started.html"
+    },
         {"id": "1001","name": "Black Watch","image": "black-watch.jpg","zip":"", "github":"", "details":""},
         {"id": "1002","name": "Blue Band","image": "blue-band.jpg","zip":"", "github":"", "details":""},
         {"id": "1003","name": "Blue T-Shirt","image": "blue-t-shirt.jpg","zip":"", "github":"", "details":""},

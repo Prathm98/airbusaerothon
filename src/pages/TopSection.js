@@ -8,10 +8,12 @@ const TopSection = () => {
         <div className='p-grid section-body'>
           <div className='p-col-12 p-md-6 p-lg-6 section-left'>
             <div className='section-title'>
-              A QUICK & UNIQUE <br /> WAY TO KICKSTART <br /> YOUR PROJECT
-            </div>
+              A QUICK & EASY <br /> WAY TO KICKSTART <br /> YOUR PROJECTS
+            </div>{' '}
+            <br />
             <div className='section-body'>
-              No need to worry about initial setup!
+              No need to worry about initial setup! <br />
+              We have got covered with it.
             </div>
           </div>
           <div className='p-col-12 p-md-6 p-lg-6 section-right'>

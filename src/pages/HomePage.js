@@ -6,12 +6,9 @@ import Footer from '../components/Footer'
 import TopSection from './TopSection'
 
 const HomePage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
   return (
     <div className='bg-body'>
+      {/* Header image section */}
       <div className='bg'>
         <div className='bg-inner p-grid p-align-center'>
           <div className='bg-title p-col'>
@@ -20,9 +17,15 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      {/* Header image section ends */}
+
+      {/* Details section */}
       <div className='top-section'>
         <TopSection />
       </div>
+      {/* Details section end */}
+
+      {/* About us section */}
       <div id='about'>
         <svg
           className='waves'
@@ -64,9 +67,14 @@ const HomePage = () => {
       <div className='home-card-container1 about'>
         <About />
       </div>
+      {/* About us section end */}
+
+      {/* APPS section  */}
       <div className='home-card-container1 app-section p-mt-4'>
         <AppSection />
       </div>
+      {/* APPS section end  */}
+
       <Footer />
     </div>
   )

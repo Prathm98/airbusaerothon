@@ -4,13 +4,16 @@ import { Divider } from 'primereact/divider'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
+  // state for sidebar visibility
   const [visibleLeft, setVisibleLeft] = useState(false)
 
   return (
+    // Navigation bar
     <nav
       className='p-shadow-3 p-d-flex p-p-3 p-jc-between'
       style={{ zIndex: 100 }}
     >
+      {/* Header logo */}
       <div style={{ marginTop: '-8px' }}>
         <Link to='/' style={{ float: 'left', textDecoration: 'none' }}>
           <div className='logo-text'>
@@ -19,6 +22,8 @@ const Header = () => {
           </div>
         </Link>
       </div>
+      {/* Header logo end */}
+
       <div className='p-mr-2'>
         <Link
           to='#'
@@ -27,30 +32,55 @@ const Header = () => {
         >
           <i className='pi pi-bars'></i>
         </Link>
+
+        {/* Header nav links */}
         <Fragment>
-          <a href='#about' className='header_link'>
-            ABOUT PROJECT
+          <a
+            href='#!'
+            className='header_link'
+            onClick={() => window.scroll(0, 0)} //scrolls to top
+          >
+            HOME
           </a>
-          <a href='#mobile_app' className='header_link'>
+          <a href='#about' className='header_link'>
+            ABOUT US
+          </a>
+          <a href='#apps' className='header_link'>
             APP STACKS
           </a>
         </Fragment>
+        {/* Header nav links end */}
       </div>
 
+      {/* Sidebar navigation */}
       <Sidebar visible={visibleLeft} onHide={() => setVisibleLeft(false)}>
+        <Divider />
+        <h5>
+          <a
+            href='#!'
+            className='sidebar_link'
+            onClick={() => {
+              setVisibleLeft(false)
+              window.scroll(0, 0)
+            }}
+          >
+            HOME
+          </a>
+        </h5>
+        <Divider />
         <h5>
           <a
             href='#about'
             className='sidebar_link'
             onClick={() => setVisibleLeft(false)}
           >
-            ABOUT PROJECT
+            ABOUT US
           </a>
         </h5>
         <Divider />
         <h5>
           <a
-            href='#mobile_app'
+            href='#apps'
             className='sidebar_link'
             onClick={() => setVisibleLeft(false)}
           >
@@ -58,6 +88,7 @@ const Header = () => {
           </a>
         </h5>
       </Sidebar>
+      {/* Sidebar navigation end */}
     </nav>
   )
 }

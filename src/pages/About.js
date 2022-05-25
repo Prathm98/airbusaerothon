@@ -9,31 +9,36 @@ const About = () => {
     {
       icon: 1,
       color: '#9C27B0',
-      title: 'Title or headline 1',
+      img: 'desktop',
+      title: 'BUILD FOR DEVELOPERS',
       desc: 'Dummy text for description. Dummy text for description. Dummy text for description. Dummy text for description. Dummy text for description.',
     },
     {
       icon: 2,
       color: '#526a76',
-      title: 'Title or headline 2',
+      img: 'check-circle',
+      title: 'EASY TO USE',
       desc: 'Dummy text for description. Dummy text for description. Dummy text for description. Dummy text for description. Dummy text for description.',
     },
     {
       icon: 3,
       color: '#e91e63',
-      title: 'Title or headline 3',
+      img: 'github',
+      title: 'OPEN SOURCE',
       desc: 'Dummy text for description. Dummy text for description. Dummy text for description. Dummy text for description. Dummy text for description.',
     },
     {
       icon: 4,
       color: '#f57c00',
-      title: 'Title or headline 4',
+      img: 'clone',
+      title: 'CROSS PLATFORM FRAMEWORKS',
       desc: 'Dummy text for description. Dummy text for description. Dummy text for description. Dummy text for description. Dummy text for description.',
     },
     {
       icon: 5,
       color: '#A0522D',
-      title: 'Title or headline 5',
+      img: 'link',
+      title: 'INTEGRATION WITH BACKEND',
       desc: 'Dummy text for description. Dummy text for description. Dummy text for description. Dummy text for description. Dummy text for description.',
     },
   ]
@@ -51,7 +56,24 @@ const About = () => {
 
   const customizedContent = (item) => {
     return (
-      <Card title={item.title} subTitle={item.date}>
+      <Card subTitle={item.date} style={{ textAlign: 'center' }}>
+        <div>
+          <span className='p-p-3 p-m-2'>
+            <i
+              className={`pi pi-${item.img} p-shadow-4`}
+              style={{
+                fontSize: '2.5em',
+                color: 'rgb(9, 80, 211)',
+                padding: '0.5em',
+                borderRadius: '10px',
+              }}
+            ></i>
+          </span>
+        </div>
+        <br />
+        <div className='p-card-title' style={{ color: 'black !important' }}>
+          {item.title}
+        </div>
         <div style={{ lineHeight: '1.3' }}>{item.desc}</div>
       </Card>
     )
@@ -61,14 +83,14 @@ const About = () => {
     <div className='timeline-demo'>
       <div className='card' style={{ padding: '3%' }}>
         <h1 className='p-text-center' style={{ color: '#495057' }}>
-          ABOUT PROJECT
+          ABOUT US
         </h1>
         <Divider></Divider>
         <h2 className='p-text-center' style={{ color: '#495057' }}>
-          “Headline text line”
+          “One Place, Many Solutions”
         </h2>
         <h3 className='p-text-center' style={{ color: '#495057' }}>
-          Sub headline text line decription. Sub headline text line decription.
+          One stop destination for every platform compatible applications.
         </h3>
         <br />
         <Timeline
@@ -79,7 +101,7 @@ const About = () => {
           content={customizedContent}
         />
       </div>
-      <div id='mobile_app'>
+      <div id='apps'>
         <svg
           className='waves'
           xmlns='http://www.w3.org/2000/svg'

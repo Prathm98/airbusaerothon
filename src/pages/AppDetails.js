@@ -4,6 +4,7 @@ import { Carousel } from 'primereact/carousel'
 import { Button } from 'primereact/button'
 
 const AppDetails = ({ heading, data }) => {
+  // Breakpoints for screen sizes
   const responsiveOptions = [
     {
       breakpoint: '1024px',
@@ -16,7 +17,7 @@ const AppDetails = ({ heading, data }) => {
       numScroll: 3,
     },
     {
-      breakpoint: '600px',
+      breakpoint: '500px',
       numVisible: 2,
       numScroll: 2,
     },
@@ -27,16 +28,17 @@ const AppDetails = ({ heading, data }) => {
     },
   ]
 
+  // Card template render
   const productTemplate = (app) => {
     return (
       <div className='app-item'>
         <div className='app-item-content'>
           <div className='mb-3'>
             <img
-              src={`images/app/${app.image}`}
+              src={`images/${app.image}`}
               onError={(e) =>
                 (e.target.src =
-                  'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')
+                  'https://he-s3.s3.amazonaws.com/media/cache/5c/16/5c1634844130cbd096095f396c269e6b.png')
               }
               alt={app.name}
               className='app-image'
@@ -45,17 +47,34 @@ const AppDetails = ({ heading, data }) => {
           <div>
             <h3 className='mb-1'>{app.name}</h3>
             <div className='car-buttons mt-5'>
-              <Button
-                icon='pi pi-align-left'
-                className='p-button p-button-rounded mr-2'
-              />{' '}
-              <a href={app.zip} target='_blank' rel='noreferrer'>
+              <a
+                href={app.docs}
+                target='_blank'
+                rel='noreferrer'
+                title='Visit Docs'
+              >
+                <Button
+                  icon='pi pi-external-link'
+                  className='p-button p-button-rounded mr-2'
+                />
+              </a>{' '}
+              <a
+                href={app.zip}
+                target='_blank'
+                rel='noreferrer'
+                title='Download Starter Boilerplate'
+              >
                 <Button
                   icon='pi pi-download'
                   className='p-button-success p-button-rounded mr-2'
                 />
               </a>{' '}
-              <a href={app.github} target='_blank' rel='noreferrer'>
+              <a
+                href={app.github}
+                target='_blank'
+                rel='noreferrer'
+                title='Visit Github'
+              >
                 <Button
                   icon='pi pi-github'
                   className='p-button-help p-button-rounded'
