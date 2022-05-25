@@ -1,0 +1,24 @@
+{
+    "front": [
+        {"id": "1000","name": "Bamboo Watch","image": "bamboo-watch.jpg","zip":"", "github":"", "details":""},
+        {"id": "1001","name": "Black Watch","image": "black-watch.jpg","zip":"", "github":"", "details":""},
+        {"id": "1002","name": "Blue Band","image": "blue-band.jpg","zip":"", "github":"", "details":""},
+        {"id": "1003","name": "Blue T-Shirt","image": "blue-t-shirt.jpg","zip":"", "github":"", "details":""},
+        {"id": "1004","name": "Bracelet","image": "bracelet.jpg","zip":"", "github":"", "details":""},
+        {"id": "1005","name": "Brown Purse","image": "brown-purse.jpg","zip":"", "github":"", "details":""},
+        {"id": "1006","name": "Chakra Bracelet","image": "chakra-bracelet.jpg","zip":"", "github":"", "details":""},
+        {"id": "1007","name": "Galaxy Earrings","image": "galaxy-earrings.jpg","zip":"", "github":"", "details":""},
+        {"id": "1008","name": "Game Controller","image": "game-controller.jpg","zip":"", "github":"", "details":""},
+        {"id": "1009","name": "Gaming Set","image": "gaming-set.jpg","zip":"", "github":"", "details":""}
+    ],
+    "back": [
+        {"id": "1000","name": "Bamboo Watch","image": "bamboo-watch.jpg","zip":"", "github":"", "details":""},
+        {"id": "1001","name": "Black Watch","image": "black-watch.jpg","zip":"", "github":"", "details":""},
+        {"id": "1002","name": "Blue Band","image": "blue-band.jpg","zip":"", "github":"", "details":""},
+        {"id": "1003","name": "Blue T-Shirt","image": "blue-t-shirt.jpg","zip":"", "github":"", "details":""} 
+    ],
+    "other": [
+        {"id": "1000","name": "Bamboo Watch","image": "bamboo-watch.jpg","zip":"", "github":"", "details":""},
+        {"id": "1001","name": "Black Watch","image": "black-watch.jpg","zip":"", "github":"", "details":""}
+    ]
+}

@@ -1,0 +1,300 @@
+.bg {
+  /* The image used */
+  background-image: url(https://media-fastly.hackerearth.com/media/hackathon/airbus-aerothon-40-finale/images/8d426f9ec2-Aerothon_4_-_HE_BG.jpg);
+  /* Full height */
+  height: 40%;
+  /* Center and scale the image nicely */
+  background-size: 100% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-body {
+  height: 100vh;
+  margin: 0;
+}
+.bg-inner {
+  /* position: absolute; */
+  height: 80%;
+  left: 0%;
+}
+.bg-inner .bg-title {
+  padding-right: 10%;
+  color: white;
+  font-size: 80px;
+  font-weight: bolder;
+  text-align: left;
+  letter-spacing: 10px;
+  text-shadow: 2px 0px 5px #111;
+}
+.bg-subtitle {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 7px;
+}
+
+.card-logo {
+  width: 50px;
+  height: 50px;
+}
+.card-font {
+  font-size: 20px;
+}
+
+.home-card-container {
+  display: table;
+  width: 95%;
+  margin: 0 auto;
+  border-spacing: 2rem;
+}
+.home-card {
+  display: table-cell;
+  padding: 16px;
+  border-radius: 0px 50px 0px 70px;
+  border-bottom: 7px solid var(--fccolor);
+}
+
+/* .home-card .p-card-title, */
+.home-card .card-logo {
+  color: var(--fccolor);
+}
+
+.logo-text {
+  text-decoration: none;
+  color: #ffffff;
+  /* float: left; */
+  margin: 5px 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg {
+    height: 50%;
+  }
+  .bg-inner {
+    height: 100%;
+  }
+  .home-card {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+    border-radius: 0px 50px 0px 70px;
+    border-bottom: 7px solid var(--fccolor);
+  }
+  .home-card-container {
+    border-spacing: 1rem;
+    width: 95%;
+    /* margin: 0 auto; */
+  }
+  .bg-inner .bg-title {
+    font-size: 35px;
+    letter-spacing: 7px;
+    padding-right: 5%;
+  }
+  .bg-subtitle {
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+}
+
+.timeline-demo .custom-marker {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-demo .p-timeline-event-content,
+.timeline-demo .p-timeline-event-opposite {
+  line-height: 1;
+}
+
+.app-section {
+  padding: 3%;
+}
+.app-section .app-body {
+  padding: 0 3%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.app-section .app-section-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+.app-section .app-section-body {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 960px) {
+  .timeline-demo .customized-timeline .p-timeline-event:nth-child(even) {
+    flex-direction: row !important;
+  }
+  .timeline-demo
+    .customized-timeline
+    .p-timeline-event:nth-child(even)
+    .p-timeline-event-content {
+    text-align: left !important;
+  }
+  .timeline-demo .customized-timeline .p-timeline-event-opposite {
+    flex: 0;
+  }
+  .timeline-demo .customized-timeline .p-card {
+    margin-top: 1rem;
+  }
+  .p-timeline.p-timeline-vertical .p-timeline-event-opposite,
+  .p-timeline.p-timeline-vertical .p-timeline-event-content {
+    padding: 3px !important;
+  }
+  .p-card .p-card-body {
+    padding: 10px !important;
+  }
+
+  .app-section .app-section-title {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .app-section .app-section-body {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+}
+
+.mobiletest {
+  transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+  transition: 0.6s ease all;
+  border: 11px solid #111;
+  border-radius: 20px;
+}
+.mobiletest:hover {
+  transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg)
+    scale(1);
+}
+
+/* APPSECTION */
+.appscreen-img {
+  width: auto !important;
+  height: 60vh !important;
+  max-height: 550px !important;
+  transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+  transition: 0.6s ease all;
+  border: 11px solid #111;
+  outline: 5px solid #333222;
+  border-radius: 20px;
+}
+.appscreen-img:hover {
+  transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg)
+    scale(1);
+}
+
+@media screen and (max-width: 960px) {
+  .appscreen-img {
+    width: auto !important;
+    height: 50vh !important;
+    max-height: 550px !important;
+    outline: 5px solid #333222;
+    transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+    transition: 0.6s ease all;
+    border: 11px solid #111;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  .appscreen-img:hover {
+    transform: perspective(800px) rotateY(-15deg) translateY(-50px)
+      rotateX(10deg) scale(1);
+  }
+}
+
+/* FLOAT ANIMATION */
+@-webkit-keyframes float {
+  0% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+  50% {
+    /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+    transform: translatey(-25px);
+  }
+  100% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+  50% {
+    /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+    transform: translatey(-25px);
+  }
+  100% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+}
+
+.app-image {
+  -webkit-animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
+}
+.app-image:hover {
+  -webkit-animation: float 0s ease-in-out infinite;
+  animation: float 0s ease-in-out infinite;
+}
+
+/* TOP SECTION CSS */
+.top-section .section-body {
+  padding: 3%;
+}
+
+.section-left {
+  color: var(--fccolor);
+  text-align: center;
+  margin: auto 0;
+  padding: 5%;
+}
+.second .section-left {
+  color: #ffffff;
+}
+.section-right {
+  margin: auto 0;
+}
+
+.top-section .section-title {
+  font-size: 50px;
+  font-weight: bolder;
+}
+.top-section .section-body {
+  font-size: 25px;
+  line-height: 1.5;
+  padding-right: 5%;
+}
+.top-section .second {
+  background: linear-gradient(0deg, var(--fccolor) 0%, #2196f3 100%);
+}
+
+@media screen and (max-width: 960px) {
+  .section-left {
+    margin: auto 0;
+    padding: 2%;
+  }
+  .top-section .section-title {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .top-section .section-body {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}

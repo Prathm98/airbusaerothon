@@ -1,2 +1,2 @@
-# airbusaerothon
-This repository contains code for Airbus aerothon project created by BitByBit team.
+# hackathonairbus1
+for Bit By Bit team to deploy in particular repository
