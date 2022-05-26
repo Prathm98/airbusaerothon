@@ -47,7 +47,7 @@ const AppDetails = ({ heading, data }) => {
           <div>
             <h3 className='mb-1'>{app.name}</h3>
             <div className='car-buttons mt-5'>
-              <a
+              {/* <a
                 href={app.docs}
                 target='_blank'
                 rel='noreferrer'
@@ -57,7 +57,7 @@ const AppDetails = ({ heading, data }) => {
                   icon='pi pi-external-link'
                   className='p-button p-button-rounded mr-2'
                 />
-              </a>{' '}
+              </a>{' '} */}
               <a
                 href={app.zip}
                 target='_blank'
