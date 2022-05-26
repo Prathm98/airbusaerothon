@@ -36,6 +36,13 @@
             "zip":"https://github.com/Prathm98/node-express-boilerplate/archive/refs/heads/typescript.zip", 
             "github":"https://github.com/Prathm98/node-express-boilerplate/tree/typescript", 
             "docs":"https://nodejs.org/en/docs/"
+        },
+        {
+            "name": "Spring Boot Java",
+            "image": "java.jpg",
+            "zip":"https://github.com/ankitbarpete/spring-starter/archive/refs/heads/master.zip", 
+            "github":"https://github.com/ankitbarpete/spring-starter", 
+            "docs":"https://spring.io/projects/spring-boot"
         }
     ],
     "other": [
