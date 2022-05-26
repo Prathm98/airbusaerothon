@@ -17,7 +17,13 @@
         {"id": "1009","name": "Gaming Set","image": "gaming-set.jpg","zip":"", "github":"", "details":""}
     ],
     "back": [
-        {"id": "1000","name": "Bamboo Watch","image": "bamboo-watch.jpg","zip":"", "github":"", "details":""},
+        {
+            "name": "NodeJS Express",
+            "image": "nodejs.jpg",
+            "zip":"https://github.com/Prathm98/node-express-boilerplate/archive/refs/heads/main.zip", 
+            "github":"https://github.com/Prathm98/node-express-boilerplate", 
+            "docs":"https://nodejs.org/en/docs/"
+        },
         {"id": "1001","name": "Black Watch","image": "black-watch.jpg","zip":"", "github":"", "details":""},
         {"id": "1002","name": "Blue Band","image": "blue-band.jpg","zip":"", "github":"", "details":""},
         {"id": "1003","name": "Blue T-Shirt","image": "blue-t-shirt.jpg","zip":"", "github":"", "details":""} 
