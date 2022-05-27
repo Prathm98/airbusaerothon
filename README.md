@@ -52,10 +52,15 @@ Now, let's breakdown the code snippet above.
 **on**: We define trigger with on : push also the branch. This workflow will run anytime you push code to the master branch.
 
 **jobs**: Workflow run is made up of one or more jobs and they run in parallel by default.
+
 **steps**: A job contains a sequence of tasks called steps. Steps can run commands, run setup tasks, or run action in your repository and each step starts either with a uses: or a name:.
+
 **actions/checkout@v2**: This action checks-out your repository, so your workflow can access it.
+
 **aws-actions/configure-aws-credentials@v1**: This configures AWS credentials and region environment variables for use in other GitHub Actions.
+
 **Build React App**: This step block installs the node packages and runs the build in the package.json file, which creates a dist folder in the root directory.
+
 **Deploy app build to S3 bucket**: This deploys the newly created build to S3 bucket <bucket-name> (replace <bucket-name> with the name of your S3 bucket. Mine is s3-github-actions).
 
 File Reference - [/.github/workflows/main.yml](https://github.com/Prathm98/airbusaerothon/blob/main/.github/workflows/main.yml)
