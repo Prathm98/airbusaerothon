@@ -357,6 +357,26 @@ input[type='file'] {
   }
 }
 
+.demo-section{
+  padding: 1% 10%;
+  text-align: center;
+  color: var(--fccolor);
+}
+
+video {
+  width: 75%;
+  height: auto;
+  border-radius: 10px;  
+  box-shadow: 10px 10px 10px #ddd;
+}
+
+@media (max-width: 960px) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* .p-dialog .p-dialog-header {
   padding: 0.5rem !important;
   background-color: var(--fccolor) !important;

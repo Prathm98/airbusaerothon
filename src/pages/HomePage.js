@@ -4,6 +4,7 @@ import About from './About'
 import AppSection from './AppSection'
 import Footer from '../components/Footer'
 import TopSection from './TopSection'
+import { Divider } from 'primereact/divider'
 
 const HomePage = () => {
   return (
@@ -74,6 +75,17 @@ const HomePage = () => {
         <AppSection />
       </div>
       {/* APPS section end  */}
+
+      <Divider />
+
+      {/* Demo section */}
+      <div className='home-card-container1 demo-section p-mt-4'>
+        <h1>SETUP DEMO VIDEO</h1>
+        <video controls>
+          <source src='demo.mp4' type='video/mp4' />
+        </video>
+      </div>
+      {/* Demo section end */}
 
       <Footer />
     </div>
