@@ -35,8 +35,10 @@
 }
 
 .card-logo {
-  width: 50px;
-  height: 50px;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 100px;
+  box-shadow: 10px 10px 10px #ddd;
 }
 .card-font {
   font-size: 20px;
@@ -51,6 +53,7 @@
 .home-card {
   display: table-cell;
   padding: 16px;
+  width: 25%;
   border-radius: 0px 50px 0px 70px;
   border-bottom: 7px solid var(--fccolor);
 }
@@ -69,6 +72,22 @@
   font-weight: bold;
 }
 
+@media only screen and (max-width: 1000px) {
+  .home-card {
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 15px;
+    border-radius: 0px 50px 0px 70px;
+    border-bottom: 7px solid var(--fccolor);
+  }
+  .home-card-container {
+    border-spacing: 1rem;
+    width: 95%;
+    /* margin: 0 auto; */
+  }
+}
 @media only screen and (max-width: 768px) {
   .bg {
     height: 50%;

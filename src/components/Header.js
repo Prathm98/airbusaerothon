@@ -48,6 +48,9 @@ const Header = () => {
           <a href='#apps' className='header_link'>
             APP STACKS
           </a>
+          <a href='#team' className='header_link'>
+            OUR TEAM
+          </a>
           <a
             href='https://github.com/Prathm98/airbusaerothon'
             target='_blank'
@@ -93,6 +96,16 @@ const Header = () => {
             onClick={() => setVisibleLeft(false)}
           >
             APP STACKS
+          </a>
+        </h5>
+        <Divider />
+        <h5>
+          <a
+            href='#team'
+            className='sidebar_link'
+            onClick={() => setVisibleLeft(false)}
+          >
+            OUR TEAM
           </a>
         </h5>
         <Divider />

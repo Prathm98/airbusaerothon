@@ -5,6 +5,7 @@ import AppSection from './AppSection'
 import Footer from '../components/Footer'
 import TopSection from './TopSection'
 import { Divider } from 'primereact/divider'
+import Team from './Team'
 
 const HomePage = () => {
   return (
@@ -86,6 +87,10 @@ const HomePage = () => {
         </video>
       </div>
       {/* Demo section end */}
+
+      {/* Team Section */}
+      <Team />
+      {/* Team Section end */}
 
       <Footer />
     </div>

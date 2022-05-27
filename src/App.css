@@ -358,16 +358,17 @@ input[type='file'] {
 }
 
 .demo-section{
-  padding: 1% 10%;
+  padding: 1% 10% 3%;
   text-align: center;
-  color: var(--fccolor);
+  background:  linear-gradient(45deg, var(--fccolor) 0%, rgb(9, 80, 211) 100%);
+  color: #fff;
 }
 
 video {
   width: 75%;
   height: auto;
   border-radius: 10px;  
-  box-shadow: 10px 10px 10px #ddd;
+  /* box-shadow: 10px 10px 10px #ddd; */
 }
 
 @media (max-width: 960px) {
