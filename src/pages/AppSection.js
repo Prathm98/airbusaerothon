@@ -28,11 +28,6 @@ const AppSection = () => {
           pariatur.
         </p>
         <br />
-        <br />
-        <h4>
-          Available for &nbsp;
-          <i className='pi pi-android' style={{ color: '#4caf50' }}></i>
-        </h4>
       </div>
       {/* App section text content end */}
 

@@ -12,8 +12,7 @@
             "zip":"https://github.com/Prathm98/react-boilerplate/archive/refs/heads/typescript.zip", 
             "github":"https://github.com/Prathm98/react-boilerplate/tree/typescript", 
             "docs":"https://reactjs.org/docs/getting-started.html"
-        },
-        {"id": "1001","name": "Black Watch","image": "black-watch.jpg","zip":"", "github":"", "details":""}        
+        }
     ],
     "back": [
         {
@@ -43,10 +42,29 @@
             "zip":"https://github.com/ankitbarpete/spring-starter/archive/refs/heads/master.zip", 
             "github":"https://github.com/ankitbarpete/spring-starter", 
             "docs":"https://spring.io/projects/spring-boot"
+        },
+        {
+            "name": "PHP Slim4 Framework",
+            "image": "slim.jpg",
+            "zip":"https://github.com/Prathm98/slim4-php-boilerplate/archive/refs/heads/main.zip", 
+            "github":"https://github.com/Prathm98/slim4-php-boilerplate", 
+            "docs":"https://www.slimframework.com/docs/v4/"
         }
     ],
     "other": [
-        {"id": "1000","name": "Bamboo Watch","image": "bamboo-watch.jpg","zip":"", "github":"", "details":""},
-        {"id": "1001","name": "Black Watch","image": "black-watch.jpg","zip":"", "github":"", "details":""}
+        {
+            "name": "React Native with Expo (For Android & iOS)",
+            "image": "expo.jpg",
+            "zip":"https://github.com/Prathm98/react-native-expo-boilerplate/archive/refs/heads/main.zip",
+            "github":"https://github.com/Prathm98/react-native-expo-boilerplate", 
+            "docs":"https://docs.expo.dev/"
+        },
+        {
+            "name": "Electron (For Desktop - Windows/MacOS/Linux)",
+            "image": "electron.jpg",
+            "zip":"https://github.com/Prathm98/electron-boilerplate/archive/refs/heads/main.zip",
+            "github":"https://github.com/Prathm98/electron-boilerplate", 
+            "docs":"https://electronjs.org/docs/latest/tutorial/quick-start"
+        }
     ]
 }
