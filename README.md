@@ -4,9 +4,11 @@
   Created by BitByBit team and maintained with ❤️ by an amazing <a href="https://www.hackerearth.com/challenges/hackathon/airbus-aerothon-40-finale/dashboard/1bfeeee/team/">team of developers</a>.
 </div><br />
 
+### Visit [OUR WEBSITE](http://aerothon.bitbybit.s3-website.us-east-2.amazonaws.com/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Webiste Technology
+## Technology User
 
 ### For Portal
 
@@ -64,3 +66,23 @@ Now, let's breakdown the code snippet above.
 **Deploy app build to S3 bucket**: This deploys the newly created build to S3 bucket <bucket-name> (replace <bucket-name> with the name of your S3 bucket. Mine is s3-github-actions).
 
 File Reference - [/.github/workflows/main.yml](https://github.com/Prathm98/airbusaerothon/blob/main/.github/workflows/main.yml)
+
+## Technology Stack boilerplates available
+
+### FRONT END
+
+- ReactJS : [Github repo url](https://github.com/Prathm98/react-boilerplate)
+- React + TypeScript : [Github repo url](https://github.com/Prathm98/react-boilerplate/tree/typescript)
+
+### BACK END
+
+- NodeJS Express : [Github repo url](https://github.com/Prathm98/node-express-boilerplate)
+- Flask API Python : [Github repo url](https://github.com/sanjeev4ds/backedflaskairbus)
+- Node TypeScript Express : [Github repo url](https://github.com/Prathm98/node-express-boilerplate/tree/typescript)
+- Spring Boot Java : [Github repo url](https://github.com/ankitbarpete/spring-starter)
+- PHP Slim4 Framework : [Github repo url](https://github.com/Prathm98/slim4-php-boilerplate)
+
+### OTHER
+
+- React Native with Expo (For Android & iOS) : [Github repo url](https://github.com/Prathm98/react-native-expo-boilerplate)
+- Electron (For Desktop - Windows/MacOS/Linux) : [Github repo url](https://github.com/Prathm98/electron-boilerplate)
