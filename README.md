@@ -10,11 +10,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### For Portal
 
-[ReactJS](https://reactjs.org/) for portal pages developement. We have hosted static pages.
+We have user [ReactJS](https://reactjs.org/) for portal pages developement. We have hosted static pages.
 
 ### For hosting
 
-For hosting of site we have user AWS S3 static hosting option which comes under free tier upto certion memory limit. Reference to static site hosting using aws s3 instructions are [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html).
+For hosting of site we have user AWS S3 static hosting option which comes under free tier upto certain memory limit. Instructions for static site hosting using aws s3 can be found [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html).
 
 ### For CI/CD
 
@@ -45,6 +45,17 @@ jobs:
         run: aws s3 sync ./dist/ s3://<bucket-name> --delete
 ```
 
-[/.github/workflows/main.yml](https://github.com/Prathm98/airbusaerothon/blob/main/.github/workflows/main.yml)
+Now, let's breakdown the code snippet above.
 
-Detailed instructions to setup github workflow with AWS S3 can be found here [here](https://dev.to/nobleobioma/deploy-a-react-app-to-amazon-s3-using-github-actions-51e).
+**name**: We define the name of this action. This will be used to identify the action amid may others you may have.
+
+**on**: We define trigger with on : push also the branch. This workflow will run anytime you push code to the master branch.
+
+**jobs**: Workflow run is made up of one or more jobs and they run in parallel by default.
+**steps**: A job contains a sequence of tasks called steps. Steps can run commands, run setup tasks, or run action in your repository and each step starts either with a uses: or a name:.
+**actions/checkout@v2**: This action checks-out your repository, so your workflow can access it.
+**aws-actions/configure-aws-credentials@v1**: This configures AWS credentials and region environment variables for use in other GitHub Actions.
+**Build React App**: This step block installs the node packages and runs the build in the package.json file, which creates a dist folder in the root directory.
+**Deploy app build to S3 bucket**: This deploys the newly created build to S3 bucket <bucket-name> (replace <bucket-name> with the name of your S3 bucket. Mine is s3-github-actions).
+
+File Reference - [/.github/workflows/main.yml](https://github.com/Prathm98/airbusaerothon/blob/main/.github/workflows/main.yml)
