@@ -8,15 +8,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Technology User
+## Technology Used
 
 ### For Portal
 
-We have user [ReactJS](https://reactjs.org/) for portal pages developement. We have hosted static pages.
+We have used [ReactJS](https://reactjs.org/) for portal pages developement. We have hosted static pages.
 
 ### For hosting
 
-For hosting of site we have user AWS S3 static hosting option which comes under free tier upto certain memory limit. Instructions for static site hosting using aws s3 can be found [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html).
+For hosting of site we have used AWS S3 static hosting option which comes under free tier upto certain memory limit. Instructions for static site hosting using aws s3 can be found [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html).
 
 ### For CI/CD
 
